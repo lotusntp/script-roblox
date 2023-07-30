@@ -4,8 +4,8 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 -- ปรับ false = ปิด
 
 getgenv().Setting = { -- ตั้งค่าทั้วไป
-    ['FPS Booster'] = true,
-    ['White Screen'] = false,
+    ['FPS Booster'] = false,
+    ['White Screen'] = true,
     ['Disible Gui'] = false, -- ปิด Gui
     ['AFK Check'] = 150, -- ยืนนิ่งครบ 150วิจะทำการเตะ
     ['Lock Fruit'] = 1000000, -- ไม่ใช้ผลราคามากกว่า 1000000ขึ้นไปซื้อชิปลงดัน
