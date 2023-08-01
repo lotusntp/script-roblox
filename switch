@@ -4,7 +4,7 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 -- ปรับ false = ปิด
 
 getgenv().Setting = { -- ตั้งค่าทั้วไป
-    ['FPS Booster'] = false,
+    ['FPS Booster'] = true,
     ['White Screen'] = true,
     ['Disible Gui'] = false, -- ปิด Gui
     ['AFK Check'] = 150, -- ยืนนิ่งครบ 150วิจะทำการเตะ
