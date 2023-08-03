@@ -1,0 +1,108 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+-- ปรับ true = เปิด
+-- ปรับ false = ปิด
+
+getgenv().Setting = { -- ตั้งค่าทั้วไป
+    ['FPS Booster'] = false,
+    ['White Screen'] = true,
+    ['Disible Gui'] = false, -- ปิด Gui
+    ['AFK Check'] = 150, -- ยืนนิ่งครบ 150วิจะทำการเตะ
+    ['Lock Fruit'] = 1000000, -- ไม่ใช้ผลราคามากกว่า 1000000ขึ้นไปซื้อชิปลงดัน
+    ['Rejoin'] = false -- Rejoin เมื่อโดนเตะ
+}
+
+getgenv().Quest = {
+    ['RGB Haki'] = true, -- ทำฮาคิสี RGB
+
+    ['Evo Race'] = {
+        ['Enabled'] = false, -- ทำเผ่า
+        ['Level'] = {1,2,3} -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
+    },
+
+    ['Quest Dough Awaken'] = {
+        ['Enabled'] = true, -- ทำโมจิตื่น
+        ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
+    },
+
+    ['Kill Boss'] = true -- ฟาร์มบอส
+}
+
+getgenv().Fruit = { -- เลือกผลปีศาจ
+    ['Main'] = {'Dough-Dough'}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
+    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'}, -- เลือกผลปีศาจ
+    
+    ['Bring Fruit'] = true -- ดึงผลปีศาจ
+}
+
+getgenv().Melee = { -- ฟาร์มหมัด
+    ['Superhuman'] = true,
+    ['Death Step'] = true,
+    ['Sharkman Karate'] = true,
+    ['Electric Claw'] = true,
+    ['Dragon Talon'] = true,
+    ['Godhuman'] = true
+}
+
+getgenv().Sword = { -- ฟาร์มดาบ
+    ['Saber'] = false,
+    ['Midnight Blade'] = false,
+    ['Shisui'] = false,
+    ['Saddi'] = false,
+    ['Wando'] = false,
+    ['Yama'] = true,
+    ['Koko'] = false,
+    ['Rengoku'] = false,
+    ['Canvander'] = false,
+    ['Buddy Sword'] = false,
+    ['Twin Hooks'] = false,
+    ['SpikeyTrident'] = false,
+    ['Hallow Scryte'] = false,
+    ['Dark Dagger'] = false,
+    ['Tushita'] = true,
+    ['True Triple Katana'] = false,
+    ['Cursed Dual Katana'] = true -- ทำดาบคู่
+}
+
+getgenv().Gun = { -- ฟาร์มปืน
+    ['Kabucha'] = false,
+    ['Acidum Rifle'] = false,
+    ['Soul Guitar'] = false, -- ทำกีต้าร์บรู๊ค
+    ['Serpent Bow'] = false
+}
+
+getgenv().Mastery = { -- ฟาร์มมาสเตอรี่
+    ['Melee'] = true,
+    ['Fruit'] = true,
+
+    ['Sword'] = true,
+    ['Setting Sword'] = { -- ตั้งค่าดาบที่ต้องการให้ฟาร์มมาสเตอรี่
+        [1] = "Tushita",
+        -- [2] = "Hallow Scythe",
+        -- [3] = "Spikey Trident",
+        -- [4] = "Dark Dagger",
+        -- [5] = "Buddy Sword",
+        [2] = "Yama",
+        -- [7] = "Shisui",
+        -- [8] = "Saddi",
+        -- [9] = "Wando",
+        -- [10] = "True Triple Katana",
+        [3] = "Cursed Dual Katana",
+        -- [12] = "Midnight Blade",
+        -- [13] = "Rengoku",
+        -- [14] = "Saber",
+        -- [15] = "Canvander"
+    },
+
+    ['Gun'] = false,
+    ['Setting Gun'] = { -- ตั้งค่าปืนที่ต้องการให้ฟาร์มมาสเตอรี่
+        [1] = 'Soul Guitar',
+        [2] = 'Kabucha',
+        [3] = 'Acidum Rifle',
+        [4] = 'Serpent Bow'
+    }
+}
+
+_G.On_Next_Generation = true -- เปิดใช้งาน Script Next Generation
+script_key="sryfyCupwaqmcXRROjEGotauxVwzGqLL";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/nextgeneration.lua"))()
