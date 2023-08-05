@@ -13,7 +13,7 @@ getgenv().Setting = { -- ตั้งค่าทั้วไป
 }
 
 getgenv().Quest = {
-    ['RGB Haki'] = true, -- ทำฮาคิสี RGB
+    ['RGB Haki'] = false, -- ทำฮาคิสี RGB
 
     ['Evo Race'] = {
         ['Enabled'] = false, -- ทำเผ่า
