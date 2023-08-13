@@ -5,8 +5,8 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 -- ปรับ false = ปิด
 
 getgenv().Setting = { -- ตั้งค่าทั้วไป
-    ['FPS Booster'] = true,
-    ['White Screen'] = false,
+    ['FPS Booster'] = false,
+    ['White Screen'] = true,
     ['Disible Gui'] = true, -- ปิด Gui
     ['AFK Check'] = 150, -- ยืนนิ่งครบ 150วิจะทำการเตะ
     ['Lock Fruit'] = 1000000, -- ไม่ใช้ผลราคามากกว่า 1000000ขึ้นไปซื้อชิปลงดัน
@@ -24,12 +24,12 @@ getgenv().Quest = {
         ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
     ['Kill Boss'] = true, -- ฟาร์มบอส
-    ['Quest Race V4'] = true -- ทำเควสดึงคันโยก + หาเกียร์
+    ['Quest Race V4'] = false -- ทำเควสดึงคันโยก + หาเกียร์
 }
 
 getgenv().Fruit = { -- เลือกผลปีศาจ
-    ['Main'] = {"Ice-Ice","Sand-Sand"}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
-    ['Select Fruit'] = {"Ice-Ice","Sand-Sand"}, -- เลือกผลปีศาจ
+    ['Main'] = {'Ice-Ice','Sand-Sand','Dark-Dark','Magma-Magma'}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
+    ['Select Fruit'] = {'Ice-Ice','Sand-Sand','Dark-Dark','Magma-Magma'}, -- เลือกผลปีศาจ
     ['Bring Fruit'] = true -- ดึงผลปีศาจ
 }
 
