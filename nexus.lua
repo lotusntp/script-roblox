@@ -290,6 +290,6 @@ spawn(function()
             },  
         }
         r = request(UrlArgs)
-        wait(10) 
+        wait(5) 
     end 
 end)
