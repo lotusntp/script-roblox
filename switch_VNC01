@@ -25,7 +25,8 @@ getgenv().Quest = {
         ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
 
-    ['Kill Boss'] = true -- ฟาร์มบอส
+    ['Kill Boss'] = true, -- ฟาร์มบอส
+    ['Quest Race V4'] = true -- ทำเควสดึงคันโยก + หาเกียร์
 }
 
 getgenv().Fruit = { -- เลือกผลปีศาจ
