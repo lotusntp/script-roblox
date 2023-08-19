@@ -3,6 +3,16 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 -- ปรับ true = เปิด
 -- ปรับ false = ปิด
 
+getgenv().Faster = { -- เพิ่มความเร็ว
+    ['CDK Super Fast'] = true, -- ซื้อสีฮาคิ + เปิดสี + เสกแอดมินด้วยถ้วย (คนที่รันโปร สวิตฮับจะมาช่วยเหยียบสีให้)
+    ['Buy Color Haki'] = 3 -- ซื้อสีฮาคิระดับLegendaryที่ใช้เปิดสี 3 สี (แนะนำปรับ 3เพราะใช้เงินม่วงเยอะก็จริงแต่โอกาสได้ดาบคู่เยอะมากกว่า)
+}
+
+getgenv().RAM = {
+    ['Enabled'] = false, -- เปิดใช้งาน Description Roblox Account Manager
+    ['Delay'] = 600 -- 10นาที
+}
+
 getgenv().Setting = { -- ตั้งค่าทั้วไป
     ['FPS Booster'] = false,
     ['White Screen'] = true,
@@ -14,9 +24,8 @@ getgenv().Setting = { -- ตั้งค่าทั้วไป
 
 getgenv().Quest = {
     ['RGB Haki'] = true, -- ทำฮาคิสี RGB
-
     ['Evo Race'] = {
-        ['Enabled'] = false, -- ทำเผ่า
+        ['Enabled'] = true, -- ทำเผ่า
         ['Level'] = {1,2,3} -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
     },
 
@@ -32,7 +41,6 @@ getgenv().Quest = {
 getgenv().Fruit = { -- เลือกผลปีศาจ
     ['Main'] = {'Dough-Dough'}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
     ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'}, -- เลือกผลปีศาจ
-    
     ['Bring Fruit'] = true -- ดึงผลปีศาจ
 }
 
@@ -58,10 +66,10 @@ getgenv().Sword = { -- ฟาร์มดาบ
     ['Buddy Sword'] = false,
     ['Twin Hooks'] = false,
     ['SpikeyTrident'] = false,
-    ['Hallow Scryte'] = false,
+    ['Hallow Scryte'] = true,
     ['Dark Dagger'] = false,
     ['Tushita'] = true,
-    ['True Triple Katana'] = false,
+    ['True Triple Katana'] = true,
     ['Cursed Dual Katana'] = true -- ทำดาบคู่
 }
 
@@ -87,8 +95,8 @@ getgenv().Mastery = { -- ฟาร์มมาสเตอรี่
         -- [7] = "Shisui",
         -- [8] = "Saddi",
         -- [9] = "Wando",
-        -- [10] = "True Triple Katana",
-        [4] = "Cursed Dual Katana",
+        [4] = "True Triple Katana",
+        [5] = "Cursed Dual Katana",
         -- [12] = "Midnight Blade",
         -- [13] = "Rengoku",
         -- [14] = "Saber",
