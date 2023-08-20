@@ -26,14 +26,15 @@ getgenv().Quest = {
     ['RGB Haki'] = true, -- ทำฮาคิสี RGB
     ['Evo Race'] = {
         ['Enabled'] = true, -- ทำเผ่า
-        ['Level'] = {1,2,3} -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
+        ['Level'] = {1,2,3}, -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
+        ['Lock'] = { 
+            'Fishman','Mink','Skypiea'
+        }
     },
-
     ['Quest Dough Awaken'] = {
         ['Enabled'] = true, -- ทำโมจิตื่น
         ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
-
     ['Kill Boss'] = true, -- ฟาร์มบอส
     ['Quest Race V4'] = true -- ทำเควสดึงคันโยก + หาเกียร์
 }
