@@ -40,8 +40,8 @@ getgenv().Quest = {
 }
 
 getgenv().Fruit = { -- เลือกผลปีศาจ
-    ['Main'] = {'Dark-Dark','Ice-Ice','Sand-Sand','Magma-Magma'}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
-    ['Select Fruit'] = {'Dark-Dark','Ice-Ice','Sand-Sand','Magma-Magma'}, -- เลือกผลปีศาจ
+    ['Main'] = {'Dark-Dark','Sand-Sand','Magma-Magma'}, -- ผลหลักถ้าเจอผลนี้ต่อไห้มีผลในตัวก็จะทำการกินผลนี้
+    ['Select Fruit'] = {'Dark-Dark','Sand-Sand','Magma-Magma'}, -- เลือกผลปีศาจ
     ['Bring Fruit'] = true -- ดึงผลปีศาจ
 }
 
