@@ -28,7 +28,7 @@ getgenv().Quest = {
         ['Enabled'] = true, -- ทำเผ่า
         ['Level'] = {1,2,3}, -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
         ['Lock'] = { 
-            'Fishman'
+            'Fishman','Human','Mink'
         }
     },
     ['Quest Dough Awaken'] = {
