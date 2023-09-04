@@ -32,11 +32,11 @@ getgenv().Quest = {
         }
     },
     ['Quest Dough Awaken'] = {
-        ['Enabled'] = true, -- ทำโมจิตื่น
-        ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
+        ['Enabled'] = false, -- ทำโมจิตื่น
+        ['Fast Mode'] = false -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
     ['Kill Boss'] = true, -- ฟาร์มบอส
-    ['Quest Race V4'] = true -- ทำเควสดึงคันโยก + หาเกียร์
+    ['Quest Race V4'] = false -- ทำเควสดึงคันโยก + หาเกียร์
 }
 
 getgenv().Fruit = { -- เลือกผลปีศาจ
