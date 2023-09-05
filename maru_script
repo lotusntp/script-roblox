@@ -1,0 +1,59 @@
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+_G.Team = "Pirate" -- Marine / Pirate
+_G.KAITUN_SCRIPT = true
+_G.Settings_Config = {
+        ["Start_Farm"] = true,
+        ["Kill_Players_Quests"] = true,
+        ["Disabled_Hop"] = false,
+        ["DO_Saber"] = false,
+        ["Disabled_Set3dRenderingEnabled_Default"] = false,
+        ["FPS_BOOST"] = false,
+        ["LOCK_FPS"] = true,
+        ["FPS_AMOUNT"] = 15,
+        ["HopForFind1MFruits"] = false,
+        ["WebHook_Notify"] = false,
+        ["WebHooksUrl"] = "",
+        ["SelectMainFruits"] = {
+            "Dark-Dark",
+            "Magma-Magma",
+            "Sand-Sand"
+        },
+        ["Select_Fruits"] = {
+            "Sand-Sand",
+            "Dark-Dark",
+            "Magma-Magma"
+        } -- "Bomb-Bomb","Spike-Spike","Chop-Chop","Spring-Spring","Kilo-Kilo","Spin-Spin","Bird: Falcon","Smoke-Smoke","Flame-Flame","Ice-Ice","Sand-Sand","Dark-Dark","Revive-Revive","Diamond-Diamond","Light-Light","Love-Love","Rubber-Rubber","Barrier-Barrier","Magma-Magma","Door-Door","Quake-Quake","Human-Human: Buddha","String-String","Bird-Bird: Phoenix","Rumble-Rumble","Paw-Paw","Gravity-Gravity","Dough-Dough","Shadow-Shadow","Venom-Venom","Control-Control","Soul-Soul","Dragon-Dragon","Leopard-Leopard"
+}
+_G.SettingsMainItemsQuests = {
+    Soul_Guitar = false,
+    RainbowHaki = true,
+    MusketeerHat = true,
+    CDK = true
+}
+_G.SettingsSword = {
+    TTK = true, -- True Tripple Katana
+    Pole_v1 = true,
+    Canvander = true,
+    Hallow_Scythe = true,
+    Buddy_Sword = true,
+    Yama = true,
+}
+_G.SettingsGun = {
+    Kabucha = false,
+    Serpent_Bow = false
+}
+_G.NotifyCationDelete = false
+_G.Close_Ui = true
+_G.Sheet_Logs = false -- Enabled Sheet
+_G.Sheet_API = "" -- API Sheet best
+_G.Delay_Sheets = 1500 -- Seconds / Delay for update
+_G.Enabled_SetDescription = false -- Logs RAM Description // true or false
+-- Script Here !!!
+
+(getgenv()).key = "MARUPY7WS7MTAM8HDIGL3O63ZW";
+(getgenv()).id = "388313760927973378";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
