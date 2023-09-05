@@ -46,7 +46,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoFarm'] = true, -- true / false
         ["GetMaterialGodhuman"] = true,
         ['Mastery_Farm'] = true, -- true / false
-        ['Mastery_Mode'] = {"Fruit"},
+        ['Mastery_Mode'] = {"Fruit","Sword"},
         ['Farm_Mode'] =  {"Level" ,"Ectoplas","Rengoku","Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
     }
     _G.tool1 = {
