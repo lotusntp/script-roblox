@@ -6,10 +6,11 @@ repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main
 _G.Team = "Pirate" -- Marine / Pirate
 _G.KAITUN_SCRIPT = true
 _G.Settings_Config = {
+        ["WhiteScreen"] = true,
         ["Start_Farm"] = true,
         ["Kill_Players_Quests"] = true,
         ["Disabled_Hop"] = false,
-        ["DO_Saber"] = true,
+        ["DO_Saber"] = false,
         ["Disabled_Set3dRenderingEnabled_Default"] = true,
         ["FPS_BOOST"] = false,
         ["LOCK_FPS"] = true,
@@ -36,10 +37,10 @@ _G.SettingsMainItemsQuests = {
 }
 _G.SettingsSword = {
     TTK = true, -- True Tripple Katana
-    Pole_v1 = true,
-    Canvander = true,
-    Hallow_Scythe = true,
-    Buddy_Sword = true,
+    Pole_v1 = false,
+    Canvander = false,
+    Hallow_Scythe = false,
+    Buddy_Sword = false,
     Yama = true,
 }
 _G.SettingsGun = {
@@ -47,7 +48,7 @@ _G.SettingsGun = {
     Serpent_Bow = false
 }
 _G.NotifyCationDelete = false
-_G.Close_Ui = true
+_G.Close_Ui = false
 _G.Sheet_Logs = false -- Enabled Sheet
 _G.Sheet_API = "" -- API Sheet best
 _G.Delay_Sheets = 1500 -- Seconds / Delay for update
