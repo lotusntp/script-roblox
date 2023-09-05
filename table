@@ -104,5 +104,5 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     }
 -- (If you want to custom script config, put it in the code below)
 -- Replace you custom script config here / วางคอนฟิกสคริปต์ที่ต้องการตรงนี้
-script_key = "yCISyBPDBbcCGwaNGDVAUMBUYbQYdkYJ"
+script_key = "nhGJSyxMrAsyVIVTcBBLvFexyfQOXlwd"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
