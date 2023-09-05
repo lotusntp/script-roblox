@@ -1,11 +1,13 @@
-setfpscap(10)
+setfpscap(15)
 repeat task.wait() until game:IsLoaded() --ต้องใส่ตลอดถ้าใช้ synx ไอควายจำใส่สมองเอาไว้
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 _G.Fruit1 = {
     ['BuyFruit'] = true, -- true / false
     ['MainFruit'] = {
-        [1] = "Ice-Ice",
+        [1] = "Magma-Magma",
+        [2] = "Sand-Sand",
+        [3] = "Magma-Magma",
     },
     ['SinperFruit_mode'] = true,
 }
@@ -15,7 +17,7 @@ _G.Race1 = {
     ['Select_Want_Race'] = {"Human","Mink","Fishman"},  -- del race that u don't want
 }
 _G.RamSetting1 = {
-    ["Enable"] = true,
+    ["Enable"] = false,
     ["Delay"] = 800, -- 300 sec
     ["Description"] = {
       
@@ -25,9 +27,16 @@ _G.RamSetting1 = {
     }
 }
 
-_G.Setting1 = {['WhiteScreen'] = false}
+_G.Sword_Farm  = {
+    [1] = "Tushita",
+    [2] = "Yama",
+    [3] = "Cursed Dual Katana"
+}
+
+
 
 if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
+    _G.Setting1['WhiteScreen'] = true
     _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
     _G.Setting1['FPS_Boost'] = false -- true / false -- จอขาว
     _G.Setting1['AutoRedeem'] = true -- true / false
@@ -74,18 +83,18 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     }
     _G.sea_III = {
         ['AutoPullLever'] = false,
-        ['AutoCDK'] = false,
+        ['AutoCDK'] = true,
         ['SoulGuitar'] = false,
-        ['RainbowHaki'] = false,
+        ['RainbowHaki'] = true,
         ['PirateRaid'] = false,
         ['Scythe'] = false,
         ['BuddySword'] = false,
         ['DarkDager'] = false,
         ['SpikeyTrident'] = false,
         ['Canvander'] = false,
-        ['Tushita'] = false,
-        ['EliteHunt'] = false,
-        ['Elite_mode'] = false, --"Elite","Yama","God Chalice"
+        ['Tushita'] = true,
+        ['EliteHunt'] = true,
+        ['Elite_mode'] = "Yama", --"Elite","Yama","God Chalice"
     }
     _G.Raid1 = {
         ['AutoRaid'] = true, -- true / false

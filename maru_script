@@ -6,7 +6,6 @@ repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main
 _G.Team = "Pirate" -- Marine / Pirate
 _G.KAITUN_SCRIPT = true
 _G.Settings_Config = {
-        ["WhiteScreen"] = true,
         ["Start_Farm"] = true,
         ["Kill_Players_Quests"] = true,
         ["Disabled_Hop"] = false,
