@@ -33,8 +33,8 @@ getgenv().Quest = {
         }
     },
     ['Quest Dough Awaken'] = {
-        ['Enabled'] = false, -- ทำโมจิตื่น
-        ['Fast Mode'] = false -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
+        ['Enabled'] = true, -- ทำโมจิตื่น
+        ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
     ['Kill Boss'] = true, -- ฟาร์มบอส
     ['Quest Race V4'] = false -- ทำเควสดึงคันโยก + หาเกียร์
@@ -71,7 +71,7 @@ getgenv().Sword = { -- ฟาร์มดาบ
     ['Hallow Scryte'] = false,
     ['Dark Dagger'] = false,
     ['Tushita'] = true,
-    ['True Triple Katana'] = false,
+    ['True Triple Katana'] = true,
     ['Cursed Dual Katana'] = true -- ทำดาบคู่
 }
 
@@ -85,12 +85,23 @@ getgenv().Gun = { -- ฟาร์มปืน
 getgenv().Mastery = { -- ฟาร์มมาสเตอรี่
     ['Melee'] = true,
     ['Fruit'] = true,
-
     ['Sword'] = true,
     ['Setting Sword'] = { -- ตั้งค่าดาบที่ต้องการให้ฟาร์มมาสเตอรี่
         [1] = "Tushita",
-        [2] = "Yama",
-        [3] = "Cursed Dual Katana"
+        [2] = "Hallow Scythe",
+        -- [3] = "Spikey Trident",
+        -- [4] = "Dark Dagger",
+        -- [5] = "Buddy Sword",
+        [3] = "Yama",
+        -- [7] = "Shisui",
+        -- [8] = "Saddi",
+        -- [9] = "Wando",
+        -- [10] = "True Triple Katana",
+        [4] = "Cursed Dual Katana"
+        -- [12] = "Midnight Blade",
+        -- [13] = "Rengoku",
+        -- [14] = "Saber",
+        -- [15] = "Canvander"
     },
 
     ['Gun'] = false,
