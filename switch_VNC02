@@ -1,24 +1,4 @@
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-local WindowFocusReleasedFunction = function()
-    RunService:Set3dRenderingEnabled(false)
-    setfpscap(15)
-    return
-end
-
-local WindowFocusedFunction = function()
-    RunService:Set3dRenderingEnabled(true)
-    setfpscap(15)
-    return
-end
-
-local Initialize = function()
-    UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
-    UserInputService.WindowFocused:Connect(WindowFocusedFunction)
-    return
-end
-
-Initialize()
+setfpscap(15)
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 -- ปรับ true = เปิด
@@ -35,7 +15,7 @@ getgenv().RAM = {
 }
 
 getgenv().Setting = { -- ตั้งค่าทั้วไป
-    ['FPS Booster'] = false,
+    ['FPS Booster'] = true,
     ['White Screen'] = true,
     ['Disible Gui'] = false, -- ปิด Gui
     ['AFK Check'] = 150, -- ยืนนิ่งครบ 150วิจะทำการเตะ
