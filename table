@@ -9,7 +9,7 @@ _G.Fruit1 = {
         [2] = "Sand-Sand",
         [3] = "Magma-Magma",
     },
-    ['SinperFruit_mode'] = true,
+    ['SinperFruit_mode'] = false,
 }
 
 _G.Race1 = {
@@ -54,14 +54,15 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon", "Godhuman"}
     }
     _G.Shop1 = {
-        ['BuyEctoplasItem'] = false,
+        ['BuyEctoplasItem'] = true,
         ['BuyCommon'] = true,
         ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
-        ['BuyKabcha'] = false, -- true / false
-        ['BuyBisento'] = false,
-        ['BuyTrueTripleKatana'] = false,
-        ['BuyPole2'] = false,
-        ['BoneTrade'] = false
+        ['BuyKabcha'] = true, -- true / false
+        ['BuyBisento'] = true,
+        ['BuyTrueTripleKatana'] = true,
+        ['BoneTrade'] = true,
+        ['BuyPole2'] = true,
+        ['CandyTrade'] = true
     }
     if type(_G.Fruit1) ~= "table" then _G.Fruit1 = {} end
     _G.Fruit1['RandomFruit'] = true
@@ -82,7 +83,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoDarkbeard'] = true
     }
     _G.sea_III = {
-        ['AutoPullLever'] = true,
+        ['AutoPullLever'] = false,
         ['AutoCDK'] = true,
         ['SoulGuitar'] = false,
         ['RainbowHaki'] = true,
@@ -94,8 +95,10 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['Canvander'] = false,
         ['Tushita'] = true,
         ['EliteHunt'] = true,
-        ['Elite_mode'] = "Yama", --"Elite","Yama","God Chalice"
+        ['Elite_mode'] = "God Chalice", --"Elite","Yama","God Chalice"
     }
+    if type(_G.Hop1) ~= "table" then _G.Hop1 = {} end
+    _G.Hop1['Hop_Item_Function'] = true
     _G.Raid1 = {
         ['AutoRaid'] = true, -- true / false
         ['ChipCant_StoreFruit'] = true,
