@@ -1,0 +1,29 @@
+public static List<String> getCities(String city, int page, int maxcost) throws Exception {
+
+        int max = maxcost;
+        List<String> cityList = new ArrayList<>();
+        String cityName = null;
+        String response = getResponsePerPage(RESTURL,city, page);
+//
+        JsonObject jsonResponse = new Gson().fromJson(response, JsonObject.class);
+        int totalPages = jsonResponse.get("total_pages").getAsInt();
+//        JsonArray data = jsonResponse.getAsJsonArray("data");
+
+        for (int i=1; i<= totalPages; i++) {
+            String response2 = getResponsePerPage(RESTURL,city, i);
+            JsonObject jsonResponse2 = new Gson().fromJson(response2, JsonObject.class);
+            JsonArray data2 = jsonResponse2.getAsJsonArray("data");
+            for (JsonElement e : data2) {
+                if(e.getAsJsonObject().get("estimated_cost").getAsInt() <= max) {
+                    cityName = e.getAsJsonObject().get("name").getAsString();
+                    System.out.println("cityName "+cityName);
+                    cityList.add(cityName);
+                    max = e.getAsJsonObject().get("estimated_cost").getAsInt();
+                }
+
+            }
+        }
+
+
+        return cityList;
+    }
