@@ -5,7 +5,7 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 -- ปรับ false = ปิด
 
 getgenv().Faster = { -- เพิ่มความเร็ว
-    ['CDK Super Fast'] = false, -- ซื้อสีฮาคิ + เปิดสี + เสกแอดมินด้วยถ้วย (คนที่รันโปร สวิตฮับจะมาช่วยเหยียบสีให้)
+    ['CDK Super Fast'] = true, -- ซื้อสีฮาคิ + เปิดสี + เสกแอดมินด้วยถ้วย (คนที่รันโปร สวิตฮับจะมาช่วยเหยียบสีให้)
     ['Buy Color Haki'] = 3 -- ซื้อสีฮาคิระดับLegendaryที่ใช้เปิดสี 3 สี (แนะนำปรับ 3เพราะใช้เงินม่วงเยอะก็จริงแต่โอกาสได้ดาบคู่เยอะมากกว่า)
 }
 
@@ -24,17 +24,17 @@ getgenv().Setting = { -- ตั้งค่าทั้วไป
 }
 
 getgenv().Quest = {
-    ['RGB Haki'] = false, -- ทำฮาคิสี RGB
+    ['RGB Haki'] = true, -- ทำฮาคิสี RGB
     ['Evo Race'] = {
-        ['Enabled'] = false, -- ทำเผ่า
+        ['Enabled'] = true, -- ทำเผ่า
         ['Level'] = {1,2,3}, -- ตั้งค่าทำเผ่าขั้น1ถึงขั้น3
         ['Lock'] = { 
             'Fishman','Human','Mink'
         }
     },
     ['Quest Dough Awaken'] = {
-        ['Enabled'] = false, -- ทำโมจิตื่น
-        ['Fast Mode'] = false -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
+        ['Enabled'] = true, -- ทำโมจิตื่น
+        ['Fast Mode'] = true -- ใช้ผลปีศาจ 1M ในการทำเควสโมจิตื่น
     },
     ['Kill Boss'] = true, -- ฟาร์มบอส
     ['Quest Race V4'] = false -- ทำเควสดึงคันโยก + หาเกียร์
@@ -61,7 +61,7 @@ getgenv().Sword = { -- ฟาร์มดาบ
     ['Shisui'] = false,
     ['Saddi'] = false,
     ['Wando'] = false,
-    ['Yama'] = false,
+    ['Yama'] = true,
     ['Koko'] = false,
     ['Rengoku'] = false,
     ['Canvander'] = false,
@@ -70,9 +70,9 @@ getgenv().Sword = { -- ฟาร์มดาบ
     ['SpikeyTrident'] = false,
     ['Hallow Scryte'] = false,
     ['Dark Dagger'] = false,
-    ['Tushita'] = false,
-    ['True Triple Katana'] = false,
-    ['Cursed Dual Katana'] = false -- ทำดาบคู่
+    ['Tushita'] = true,
+    ['True Triple Katana'] = true,
+    ['Cursed Dual Katana'] = true -- ทำดาบคู่
 }
 
 getgenv().Gun = { -- ฟาร์มปืน
@@ -85,19 +85,19 @@ getgenv().Gun = { -- ฟาร์มปืน
 getgenv().Mastery = { -- ฟาร์มมาสเตอรี่
     ['Melee'] = true,
     ['Fruit'] = true,
-    ['Sword'] = false,
+    ['Sword'] = true,
     ['Setting Sword'] = { -- ตั้งค่าดาบที่ต้องการให้ฟาร์มมาสเตอรี่
-        -- [1] = "Tushita",
+        [1] = "Tushita",
         -- [2] = "Hallow Scythe",
         -- [3] = "Spikey Trident",
         -- [4] = "Dark Dagger",
         -- [5] = "Buddy Sword",
-        -- [2] = "Yama",
+        [2] = "Yama",
         -- [7] = "Shisui",
         -- [8] = "Saddi",
         -- [9] = "Wando",
         -- [10] = "True Triple Katana",
-        -- [3] = "Cursed Dual Katana"
+        [3] = "Cursed Dual Katana"
         -- [12] = "Midnight Blade",
         -- [13] = "Rengoku",
         -- [14] = "Saber",
